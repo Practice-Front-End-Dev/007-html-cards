@@ -1,0 +1,163 @@
+/********************
+BASIC FOUNDATION
+********************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #868784;
+	margin: 2rem;
+}
+/********************
+CARD CONTAINER
+********************/
+
+.blog-card {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem auto;
+	box-shadow: 0px 3px 7px -1px rgba(0, 0, 255, .2);
+	margin-bottom: 1.6%;
+	background: #FFF;
+	line-height: 1.4;
+	font-family: sans-serif;
+	border-radius: 5px;
+	overflow: hidden;
+	z-index: 0;
+	border: solid black 2px;
+}
+
+
+/********************
+PHOTO STYLING
+********************/
+
+.photo-div {
+	position: relative;
+	z-index: 0;
+	height: 200px;
+}
+
+.img-div {
+	background-size: cover;
+	background-position: center;
+	
+
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+
+/********************
+DESCRIPTION
+********************/
+
+.description {
+	padding: 1rem;
+	background: white;
+	/*position: relative;
+	z-index: 1;*/
+}
+
+.description h1, h2 {
+	font-family: Poppins, sans-serif;
+}
+
+.description h1 {
+	line-height: 1;
+	margin: 0;
+	font-size: 1.7rem;
+}
+
+.description h2 {
+	font-size: 1rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #a2a2a2;
+	margin-top: 5px
+}
+
+/*** READ MORE ***/
+.description .read-more {
+	text-align: right;
+	margin-bottom: 0px;
+}
+
+.description .read-more a {
+	color: #5ad67d;
+	display: inline-block;
+	position: relative;
+}
+
+
+/********************
+FONT AWESOME @PSUEDO
+********************/
+
+.description .read-more a::after0px{
+	content: "\f061";
+	font-family: fontAwesome; /*included folder in project file*/
+	margin-left: -10px;
+	opacity: 0; /*hide the icon before hover*/
+	vertical-align: middle;
+	transition: margin .3s, opacity .3s;
+}
+
+.description .read-more a:hover::after {
+	margin-left: 5px; /*icon has left-margin, which pushes the original content to the left*/
+	opacity: 1;
+}
+
+
+/********************
+MEDIA QUERIES
+********************/
+
+@media (min-width: 640px) {
+	
+	/* Flex rows for screens 640px and up! */
+	.blog-card {
+		flex-direction: row;
+		height: auto;
+	}
+
+	/* Photo takes 40% of the row */
+	.photo-div {
+		flex-basis: 40%;
+		height: auto;
+	}
+	
+	.description {
+		flex-basis: 60%;
+	}
+
+	.alt {
+		flex-direction: row-reverse;
+	}
+	
+
+}
+
+
+
+
+/********************
+NOTES
+********************/
+
+/* I couldn't figure out how to take the underline off of the font-awesome icon. I tried "text-decoration: none;" to no avail ... */
+
+/* I also have the cards working without a specific card container. This is how it was written on the codepen site I studied. */
+
+/* The original project was written using Sass. I learned a bit about it, and would like to use it in the future. */
+
+/* This is also my first time to code with font-awesome. I've used the icons for ui design before ... */
+
+
