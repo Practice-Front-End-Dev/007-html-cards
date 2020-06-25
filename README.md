@@ -1,3 +1,3 @@
- # Font Awesome Icons on Link Hover
+ # CARDS WITH FONT AWESOME HOVER
  
  https://practice-web-design.github.io/lp-project-004/
