@@ -1,3 +1,3 @@
- # CARDS WITH FONT AWESOME HOVER
+ # Cards that stretch ...
  
- https://practice-web-design.github.io/lp-project-004/
+https://practice-web-dev.github.io/html-cards/
