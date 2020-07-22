@@ -1,3 +1,3 @@
  # Cards that stretch ...
  
-https://practice-web-dev.github.io/html-cards/
+https://practice-front-end-dev.github.io/html-cards/
