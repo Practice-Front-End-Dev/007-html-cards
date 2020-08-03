@@ -1,3 +1,3 @@
  # Cards that stretch ...
  
-https://practice-full-stack-dev.github.io/html-cards/
+https://practice-full-stack.github.io/html-cards/
